@@ -1,0 +1,44 @@
+batch_size: 16
+cuda_num: 2
+data_path: dataset
+exp_type: supervised
+img_sz: 128
+imgs_dir: flowers
+labels_dir: annotations
+labels_to_class:
+  0: daisy
+  1: dandelion
+  2: rose
+  3: sunflower
+  4: tulip
+log: train.log
+lr: 1e-3
+mean_norm: false
+mean_val:
+- 0.57711623
+- 0.57658564
+- 0.47776383
+momentum: 9e-1
+network: resnet18
+new_var: 25
+new_var_2: new
+num_classes: 5
+num_epochs: 5
+num_rot: 4
+opt: adam
+pretext: false
+pretrained_dir: None
+pretrained_weights: None
+root_path: D:\2020\Trainings\self_supervised_learning
+save_dir: sl_rotnet_pret_1
+scheduler: false
+ssl_pretrained_exp_path: ssl_rotnet
+ssl_weight: resnet18_epoch242_checkpoint.pth
+std_val:
+- 0.09158824
+- 0.09528065
+- 0.20864842
+use_cuda: false
+use_pretrained: false
+use_ssl: true
+val_split: 0.15
